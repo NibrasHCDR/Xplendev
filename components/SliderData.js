@@ -1,0 +1,22 @@
+export const SliderData = [
+    {
+        image:
+        'https://i.postimg.cc/c1236vvT/wallpaperflare-com-wallpaper-1.jpg'
+    },
+    {
+        image:
+        'https://i.postimg.cc/Y9HGkXhG/wallhaven-85d9q2.png'
+    },
+    {
+        image:
+        'https://i.postimg.cc/ydYYN1MY/fondo-2.jpg'
+    },
+    {
+        image:
+        'https://i.postimg.cc/kgwLvP31/wallpaperflare-com-wallpaper.jpg'
+    },
+    {
+        image:
+        'https://i.postimg.cc/Z5MTqc52/christopher-gower-m-HRf-Lhg-ABo-unsplash.jpg'
+    },
+];

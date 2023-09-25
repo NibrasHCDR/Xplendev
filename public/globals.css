@@ -18,26 +18,23 @@
   background-image: url('https://i.postimg.cc/c1236vvT/wallpaperflare-com-wallpaper-1.jpg');
 }
 
-/* Color de Los Botones Principales de esta Web*/
-
 .fondo-img5{
   background-image: url('https://i.postimg.cc/mkjgp948/wallpaperflare-com-wallpaper-2.jpg');
 }
 
-.fondo-img6{
-  background-image: url('https://i.postimg.cc/N0nCvGtY/wallpaperflare-com-wallpaper-3.jpg');
-}
 
+/* Color de Los Botones Principales de esta Web*/
 
 
 .gif-1 {
-  background-image: url(/public/animation_1.gif);
+  background-image: url(/animation_1.gif);
   background-size: cover;
 }
 
 .gif2 {
-  background-image: url(/public/animation_1.gif);
+  background-image: url(/animation_1.gif);
   background-size: cover;
 }
+
 
 
