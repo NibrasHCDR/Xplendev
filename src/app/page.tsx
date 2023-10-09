@@ -3,10 +3,13 @@ import Head from 'next/head'
 import Inicio from '../../components/Inicio'
 import Slider from '../../components/Slider'
 import { SliderData } from '../../components/SliderData'
-import Presentacion from '../../components/PaginasWeb'
+import Presentacion from '../../components/Presentacion'
 import PaginasWeb from '../../components/PaginasWeb'
 import Membersias from '../../components/Membersias'
 import Script from 'next/script'
+import Metodologia from '../../components/Metodologia'
+import Contacto from '../../components/Contacto'
+import Diseño from '../../components/Diseño'
 
 export default function Home() {
   return (
@@ -16,8 +19,11 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Inicio/>
-      <PaginasWeb/>
+      <Presentacion/>
+      <Diseño/>
+      <Metodologia/>
       <Membersias/>
+      <Contacto/>
     </div>
   )
 }

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/*Definimos nuestros fondos de secciones de la APP*/
 .fondo-img{
   background-image: url('https://i.postimg.cc/Z5MTqc52/christopher-gower-m-HRf-Lhg-ABo-unsplash.jpg');
 }
@@ -20,6 +21,14 @@
 
 .fondo-img5{
   background-image: url('https://i.postimg.cc/mkjgp948/wallpaperflare-com-wallpaper-2.jpg');
+}
+
+.fondo-img6{
+  background-image: url('https://i.postimg.cc/sf5t63wF/fondo-1.jpg');
+}
+
+.fondo-img7{
+  background-image: url('https://i.postimg.cc/sf5t63wF/fondo-1.jpg');
 }
 
 

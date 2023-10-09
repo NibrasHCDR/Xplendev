@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+const withMT = require("@material-tailwind/html/utils/withMT");
 
 const config: Config = {
   content: [
@@ -9,6 +10,8 @@ const config: Config = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
 export default config
