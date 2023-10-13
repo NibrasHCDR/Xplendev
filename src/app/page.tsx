@@ -10,10 +10,11 @@ import Script from 'next/script'
 import Metodologia from '../../components/Metodologia'
 import Contacto from '../../components/Contacto'
 import Diseño from '../../components/Diseño'
+import Footer from '../../components/Footer'
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Head>
         <meta name='description' content='Generates By Create' />
         <link rel='icon' href='/favicon.ico' />
@@ -24,6 +25,7 @@ export default function Home() {
       <Metodologia/>
       <Membersias/>
       <Contacto/>
+      <Footer/>
     </div>
   )
 }

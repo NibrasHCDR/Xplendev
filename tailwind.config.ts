@@ -8,10 +8,15 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "principal": ['Be Vietnam Pro', 'sans-serif']
+      }
+    },
   },
   plugins: [
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms'),
+    require('tailwind-scrollbar-hide')
   ],
 }
 export default config

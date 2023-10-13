@@ -41,7 +41,7 @@ useEffect(() => {
         <div className="max-w-[1240px] mx-auto flex justify-between items-center p-4 text-white">
             <Link href={""}>
             <motion.img 
-              className="w-[45%] h-[45%] font-bold text-4xl hover:scale-125 transition duration-200 ease-in-out cursor-default"
+              className="w-[45%] h-[45%] text-4xl hover:scale-125 transition duration-200 ease-in-out cursor-default"
               src="https://i.postimg.cc/nhjkmZ67/xplendev-1-Transparent.png"
               >
               </motion.img>
@@ -50,28 +50,28 @@ useEffect(() => {
                 <li className="p-4">
                   <Link href={"/"}>
                   <button type="button"
-                        className="inline-block hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-white hover:bg-opacity-[2%] focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 font-mono"
+                        className="inline-block hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-white hover:bg-opacity-[2%] focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700"
                         data-te-ripple-init>Inicio</button>
                   </Link>
                 </li>
                 <li className="p-4">
                 <Link href="/MisPaginasWeb">
                 <button type="button"
-                        className="inline-block hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-opacity-[2%] hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 hover:bg-white font-mono"
+                        className="inline-block hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-opacity-[2%] hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 hover:bg-white"
                         data-te-ripple-init>Páginas Web</button>
                 </Link>
                 </li>
                 <li className="p-4">
                 <Link href={"/Membersias"}>
                 <button type="button"
-                        className="inline-block hover:scale-105 rounded-full border-2 hover:bg-white border-[#ED1FE8] hover:text-[#ED1FE8] lg:text-lg text-xs px-6 pb-[6px] pt-2 font-medium uppercase leading-normal text-primary transition duration-150 hover:bg-opacity-[2%] ease-in-out hover:border-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 font-mono"
+                        className="inline-block hover:scale-105 rounded-full border-2 hover:bg-white border-[#ED1FE8] hover:text-[#ED1FE8] lg:text-lg text-xs px-6 pb-[6px] pt-2 font-medium uppercase leading-normal text-primary transition duration-150 hover:bg-opacity-[2%] ease-in-out hover:border-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700"
                         data-te-ripple-init>Membersías</button>
                 </Link>
                 </li>
                 <li className="p-4">
                 <Link href={"/contacto"}>
                 <button type="button"
-                        className="inline-block hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs hover:bg-white hover:bg-opacity-[2%] font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-600 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 font-mono"
+                        className="inline-block hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs hover:bg-white hover:bg-opacity-[2%] font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-600 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700"
                         data-te-ripple-init>Contacto</button>
                 </Link>
                 </li>
