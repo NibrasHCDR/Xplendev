@@ -73,7 +73,7 @@
 
 /* Diseño de Container Principales de Diseño.tsx*/
 .diseñoContainer{
-  @apply  w-[800px] h-[850px] bg-[#ED1FE9]/80 rounded-lg shadow-lg border-2 shadow-[#ED1FE9]/40
+  @apply  w-[800px] h-[850px] bg-blue-500/80 rounded-lg shadow-lg border-2 shadow-blue-400/40
 }
 .diseñoContainer2{
   @apply  w-[450px] h-[850px] bg-[#F3F3F3] rounded-lg shadow-lg border-2 shadow-[#ED1FE8]/40
@@ -93,6 +93,21 @@
   @apply drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.1)]
 }
 
+/*Lograr que no se vea el resaltado que se produce cuando un usuario selecciona texto en una página web */
+.no-select {
+  user-select: none;
+}
+
+/*  Para lograr un efecto de desenfoque en un div sin afectar el texto */
+.blur-div {
+  backdrop-filter: blur(4px); /* Ajusta el valor de desenfoque según tus preferencias */
+}
+
+.map-container {
+  width: 50%;
+  height: 50%;
+  position: relative
+}
 
 
 

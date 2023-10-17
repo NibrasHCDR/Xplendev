@@ -17,12 +17,12 @@ function Metodologia({}: Props) {
 
 
   return (
-    <div className="inline:block h-screen w-screen bg-fixed bg-center bg-cover fondo-img7 z-0">
+    <div className="inline:block h-full w-full bg-fixed bg-center bg-cover fondo-img7 z-0 border-b-4 border-[#ED1FE8]">
 
-      <div className="h-screen lg:mx-20 lg:pt-5 my-auto bg-white/50">
+      <div className="h-screen lg:mx-20 lg:pt-5 my-auto bg-white/70 xl:pt-24">
 
       <div className="text-center text-black">
-        <h1 className="pt-5 xl:text-6xl text-2xl cursor-default">La Metodología de <span className="text-[#D946EF]">XplenDevelopers</span></h1>
+        <h1 className="pt-5 xl:text-6xl text-2xl cursor-default">La Metodología de <span className="text-blue-500">XplenDevelopers</span></h1>
         <h2 className="pt-10 xl:text-2xl text-lg text-blue-950">El diseño de tu página web es lo más importante, por esto, contamos con un enfoque centrado en el crecimiento de tu negocio</h2>
         <h2 className="pb-5 pt-5 xl:text-2xl text-lg text-blue-950">Conoce Nuestra <span className="xl:text-3xl text-xl text-[#FE5364]">MET</span><span className="xl:text-3xl text-xl text-[#945BA5]">ODO</span><span className="xl:text-3xl text-xl text-[#EFC518]">LOG</span><span className="xl:text-3xl text-xl text-[#2FA8CD]">ÍA</span></h2>
       </div>
@@ -37,7 +37,7 @@ function Metodologia({}: Props) {
          </Image>
         </motion.div>
 
-        <div className="text-black text-start w-screen lg:mr-32 my-auto md:mx-20">
+        <div className="text-black text-start w-auto lg:mr-32 my-auto md:mx-20">
          <h1 className="xl:text-4xl text-xl hover:text-[#FE5364] hover:scale-105 transition duration-200 ease-in-out cursor-default">
           <span className="underline decoration-solid text-[#FE5364]">Fase 1:</span>
           <span className="underline decoration-solid"> Análisis detallado de tus necesidades y objetivos</span>

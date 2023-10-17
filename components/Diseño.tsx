@@ -10,9 +10,9 @@ function Diseño({}: Props) {
 
   
   return (
-    <div className="h-screen w-screen bg-center bg-cover bg-fixed fondo-img9 z-0 shadow-xl border-b-4 border-[#ED1FE8]">
+    <div className="h-screen w-full bg-center bg-cover bg-fixed fondo-img9 z-0 shadow-xl border-b-4 border-[#ED1FE8]">
 
-      <div className="flex h-full w-auto justify-between xl:px-32 xl:pt-32 bg-white/50">
+      <div className="flex h-full w-full justify-between xl:px-32 xl:pt-20 bg-white/50">
 
         <div className="diseñoContainer">
         <h1 className="xl:text-4xl text-start xl:mx-12 xl:mt-16 textShadow text-white">Responsive Design</h1>
@@ -26,7 +26,7 @@ function Diseño({}: Props) {
         <div className="diseñoContainer2">
         <Image className="w-auto h-[500px] max-w-[460px] min-h-[250px] min-w-[250px] rounded-lg" src={myImage2} alt={'500px'} />
         <h1 className="xl:text-4xl text-start xl:mx-12 xl:mt-12">Tu dominio, tu marca</h1>
-        <h1 className="xl:text-4xl text-start xl:mx-12 xl:mt-2 text-[#D4D3D6]">Haz que tu sitio sea reconocible con un dominio personalizad</h1>
+        <h1 className="xl:text-4xl text-start xl:mx-12 xl:mt-2 text-[#D4D3D6]">Haz que tu sitio sea reconocible con un dominio personalizado</h1>
           
 
         </div>

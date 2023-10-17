@@ -16,16 +16,19 @@ export default function Home() {
   return (
     <div className="">
       <Head>
+        <title>XplenDev</title>
         <meta name='description' content='Generates By Create' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='https://i.postimg.cc/nhjkmZ67/xplendev-1-Transparent.png' />
       </Head>
-      <Inicio/>
-      <Presentacion/>
-      <Diseño/>
-      <Metodologia/>
-      <Membersias/>
-      <Contacto/>
-      <Footer/>
+      
+      <section><Inicio/></section>
+      <section id="diseño"><Presentacion/></section>
+      <section><Diseño/></section>
+      <section id="metodologia"><Metodologia/></section>
+      <section id="membersias"><Membersias/></section>
+      <section id="contacto"><Contacto/></section>
+      <section><Footer/></section>
+      
     </div>
   )
 }
