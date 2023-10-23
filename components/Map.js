@@ -16,11 +16,12 @@ export class MapContainer extends React.Component {
         <div className="map-container">
       <Map
         google={this.props.google}
-        style={mapStyles}
+        //style={mapStyles}
         initialCenter={location}
         zoom={16}
       >
-        <Marker position={location} />
+        <Marker position={location}
+         />
       </Map>
       </div>
     );

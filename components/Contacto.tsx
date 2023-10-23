@@ -16,37 +16,41 @@ function Contacto({}: Props) {
 
 
   return (
-    <div className="inline:block h-screen w-full bg-fixed bg-center bg-cover fondo-img7 z-0">
+    <div className="h-full w-ascreen bg-fixed bg-center bg-cover fondo-img7">
 
-      <div className="h-screen lg:mx-20 xl:pt-24 my-auto bg-white/50">
+      <div className="h-screen xl:px-20 pt-24 bg-white/50">
 
-      <div className="text-center">
+      <div className="grid-container4 text-center justify-center mx-2">
+
+        <div className="con-1">
+           
+      <div className="text-center pb-12">
         <h1 className="pt-5 xl:text-6xl text-2xl cursor-default">
           <span className="text-[#ED1FE8]">Conversemos</span> de <span>Tu Idea</span>
         </h1>
-      </div>       
+        
+      </div>
+        </div>
 
-      <div className="xl:h-[850px] h-screen object-center">
+        <div className="con-2">
+           
+        <motion.div className="relative w-[550px] h-[550px] hidden lg:inline-flex xl:mb-auto mx-auto object-center" style={{  }}>
 
-        <div className="flex h-[850px] justify-between rounded-xl mt-2 xl:mx-12mx-auto">
+       <Image className="absolute cursor-default transition duration-1000 ease-in-out hidden lg:inline-flex" alt="my gif" height={550} width={800} src={myGif} >
+       </Image>
+       </motion.div>
 
-        <motion.div className="relative w-[700px] h-[550px] hidden xl:inline-flex xl:mb-auto mx-auto object-center" style={{  }}>
+        </div>
 
-        <Image className="absolute cursor-default transition duration-1000 ease-in-out hidden lg:inline-flex" alt="my gif" height={550} width={800} src={myGif} >
-        </Image>
-        </motion.div>
-
-        <div className="flex xl:w-[620px] md:w-[580px] w-[500px] my-12 mx-auto rounded-xl">
-
-          <div className="w-full h-[650px] inline-block bg-white/90 shadow-2xl rounded-xl mx-2">
-
-          <div className="w-full h-[80px] inline-block xl:mt-10 text-center my-auto">
+        <div className="con-3 h-[600px] inline-block bg-white/90 rounded-lg shadow-lg border-2 shadow-[#ED1FE8]/40 xl:mr-4">
+          
+        <div className="w-full h-[80px] inline-block xl:mt-10 text-center my-auto">
             <h1 className="xl:text-4xl text-xl text-blue-500"> Hablemos! </h1>
-            <h2 className="mt-2 xl:text-xl text-md text-blue-950">Cuéntanos tu idea y te responderemos lo antes posible</h2>
+            <h2 className="mt-2 xl:text-lg mx-4 text-sm text-blue-950">Cuéntanos tu idea y te responderemos lo antes posible</h2>
           </div>
 
 
-          <div className="text-start w-[350px] mx-auto">
+          <div className="text-start w-auto xl:mx-14 mx-10">
 
           <form className="space-y-4 mt-5 text-start">
             <input className="block w-full shadow-md appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-[#ED1FE8] shadow-[#ED1FE8]/20" id="username" type="text" placeholder="Nombre"></input>
@@ -56,12 +60,10 @@ function Contacto({}: Props) {
           </form>
 
           </div>
-          </div>
-        </div>
 
         </div>
-      </div>
 
+      </div>       
       </div>
 
     </div>

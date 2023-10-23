@@ -107,7 +107,289 @@
   width: 50%;
   height: 50%;
   position: relative
+  
 }
+
+/* Nuevo CSS Grid Layouts */
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Contenedor Presentscion */
+.grid-container6{
+  display: grid;
+  grid-gap: 2rem;
+  grid-template:
+  "pr4" auto
+  "pr1" auto
+  "pr2" auto
+  "pr3" auto
+
+}
+
+
+/* Presentacion Responsive screen*/
+@media screen and (min-width:1024px) {
+  .grid-container6 {
+      grid-gap: 1rem;
+      grid-template:
+      "pr1 pr1 pr4 pr4" auto
+      "pr2 pr3 pr4 pr4" auto;
+      grid-template-columns: 3fr 1.5fr 1.5fr 0.5fr;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .grid-container6 {
+      grid-gap: 1rem;
+      grid-template:
+      "pr4 pr4 pr4 pr4" auto
+      "pr1 pr1 pr1 pr1" auto
+      "pr2 pr2 pr3 pr3" auto;
+      grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  }
+}
+
+/* Presentacion Div 1*/
+.pre-1{
+  grid-area: pr1;
+}
+/* Presentacion Div 2*/
+.pre-2{
+  grid-area: pr2;
+}
+/* Presentacion Div 3*/
+.pre-3{
+  grid-area: pr3;
+}
+/* Presentacion Div 4*/
+.pre-4{
+  grid-area: pr4;
+}
+
+/* Contenedor Diseño */
+.grid-container3{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:
+  "d1" auto
+  "d2" auto
+  "d3" auto;
+}
+
+/* Diseño Responsive screen*/
+@media screen and (min-width:1024px) {
+  
+  .grid-container3 {
+    grid-template:
+    "d1 d2 d3" auto;
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+}
+/* Diseño Div 1*/
+.dis-1{
+  grid-area: d1;
+}
+/* Diseño Div 2*/
+.dis-2{
+  grid-area: d2;
+  
+}
+/* Diseño Div 3*/
+.dis-3{
+  grid-area: d3;
+}
+
+/* Contenedor de Footer*/
+.grid-container {
+  display: grid;
+  grid-template:
+  "f1" auto
+  "f2" auto
+  "f4" auto
+}
+/* Footer Responsive screen*/
+@media screen and (min-width:1000px) {
+  .grid-container {
+    grid-template:
+    "f1 f2" auto
+    "f4 f4" auto
+  }
+}
+
+/* Footer div 1 */
+.footer-1{
+  grid-area: f1;
+}
+/* Footer div 1 */
+.footer-2{
+  grid-area: f2;
+}
+/* Footer div 1 */
+.footer-4{
+  grid-area: f4;
+}
+
+/* Contenedor Membersias */
+.grid-container2{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:
+  "m1" auto
+  "m2" auto
+  "m3" auto;
+
+}
+/* Membersias Responsive screen*/
+@media screen and (min-width:1024px) {
+  .grid-container2 {
+    grid-gap: 2rem;
+    grid-template:
+    "m1 m2 m3" auto;
+  }
+}
+
+
+/* Membersías Div 1*/
+.memb-1{
+  grid-area: m1;
+}
+/* Membersías Div 2*/
+.memb-2{
+  grid-area: m2;
+}
+/* Membersías Div 3*/
+.memb-3{
+  grid-area: m3;
+}
+/* Membersías Div 4*/
+.memb-4{
+  grid-area: m4;
+}
+
+
+/* Contenedor Contacto */
+.grid-container4{
+  display: grid;
+  grid-template:
+  "c1" auto
+  "c3" auto; 
+
+}
+
+
+/* Contacto Responsive screen*/
+@media screen and (min-width:1000px) {
+  .grid-container4 {
+    grid-template:
+    "c1 c1" auto
+    "c2 c3" auto;
+  }
+
+}
+
+/* Contacto Responsive screen*/
+@media screen and (min-width:1200px) {
+  
+  .grid-container4 {
+    grid-template:
+    "c1 c1" auto
+    "c2 c3" auto;
+
+  }
+}
+/* Contacto Div 1*/
+.con-1{
+  grid-area: c1;
+}
+/* Contacto Div 2*/
+.con-2{
+  grid-area: c2;
+  
+}
+/* Contacto Div 3*/
+.con-3{
+  grid-area: c3;
+}
+
+
+/* Contenedor Metodologia */
+.grid-container5{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:
+  "me1" auto
+  "me2" auto
+  "me3" auto
+  "me4" auto
+  "me5" auto;
+}
+
+
+/* Metodologia Responsive screen*/
+@media screen and (min-width:1024px) {
+  .grid-container5 {
+      grid-gap: 1rem;
+      grid-template:
+      "me1 me1 me1 me1" auto
+      "me2 me3 me4 me5" auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+
+}
+
+/* Metodologia Div 1*/
+.met-1{
+  grid-area: me1;
+}
+/* MetodologiaDiv 2*/
+.met-2{
+  grid-area: me2;
+}
+/* Metodologia Div 3*/
+.met-3{
+  grid-area: me3;
+}
+/* Metodologia Div 4*/
+.met-4{
+  grid-area: me4;
+}
+/* Metodologia Div 5*/
+.met-5{
+  grid-area: me5;
+}
+
+/* Responsives Screen */
+
+/* Screen Móviles */
+@media screen and (max-width: 600px) {
+
+}
+
+/* Screen Tablet */
+@media screen and (min-width: 600px) {
+  
+}
+
+/* Screen Escritorio */
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 992px) {
+  
+}
+
+@media screen and (min-width: 1200px) {
+  
+}
+
+
+
 
 
 
