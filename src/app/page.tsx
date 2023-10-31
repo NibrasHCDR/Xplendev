@@ -1,16 +1,13 @@
-import Image from 'next/image'
 import Head from 'next/head'
 import Inicio from '../../components/Inicio'
-import Slider from '../../components/Slider'
 import Presentacion from '../../components/Presentacion'
-import PaginasWeb from '../../components/PaginasWeb'
 import Membersias from '../../components/Membersias'
-import Script from 'next/script'
 import Metodologia from '../../components/Metodologia'
 import Contacto from '../../components/Contacto'
 import Diseño from '../../components/Diseño'
 import Footer from '../../components/Footer'
-import FooterCopy from '../../components/FooterCopy'
+import Header from '../../components/Header'
+
 
 export default function Home() {
   return (
@@ -20,7 +17,7 @@ export default function Home() {
         <meta name='description' content='Generates By Create' />
         <link rel='icon' href='https://i.postimg.cc/nhjkmZ67/xplendev-1-Transparent.png' />
       </Head>
-      
+      <Header />
       <section><Inicio/></section>
       <section id="diseño"><Presentacion/></section>
       <section><Diseño></Diseño></section>

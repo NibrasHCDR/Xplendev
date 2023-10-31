@@ -1,10 +1,17 @@
 'use client';
-import  { useState } from 'react';
+import  { useState, useEffect } from 'react';
 import React from 'react';
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { useEffect } from 'react';
 import { motion } from 'framer-motion'
+import axios from 'axios';
+
+interface SeccionData {
+  texto1: string;
+  texto2: string;
+  texto3: string;
+  texto4: string;
+}
 
 type Props = {}
 
@@ -13,6 +20,7 @@ function Header({}: Props) {
     const [color, setColor] = useState('transparent')
     const [textColor, setTextColor] = useState('white')
     const [tamañoNav, setTamañoNav] = useState("w-full h-[115px] max-w- fixed left-0 top-0 z-10 ease-in duration-300")
+    const [seccion, setSeccion] = useState<SeccionData | null>(null);
 
     const handleNav = () => {
         setNav(!nav);
@@ -35,6 +43,26 @@ useEffect(() => {
      window.addEventListener('scroll', changeColor);
 }, []);
 
+useEffect(() => {
+  // Reemplaza 'mi-id' con el ID de la sección que deseas obtener
+  const id = "654016982ae5e69a1af4984d";
+
+  // Realiza una solicitud GET a la API para obtener la sección por ID
+  axios.get<SeccionData>(`http://localhost:3000/api/secciones/${id}`)
+    .then((response) => {
+      if (response.status === 200) {
+        // La solicitud fue exitosa, y los datos de la sección se encuentran en response.data
+        const seccionData = response.data;
+        setSeccion(seccionData);
+      } else {
+        console.log('Error al obtener la sección solicitada');
+      }
+    })
+    .catch((error) => {
+      console.error('Error de red o solicitud:', error);
+    });
+}, []); // El segundo argumento vacío [] asegura que esto se ejecute solo una vez al montar el componente
+
 
   return (
     <div style={{backgroundColor: `${color}` }} className={tamañoNav}>
@@ -50,28 +78,28 @@ useEffect(() => {
                 <li className="p-4">
                 <Link href="#diseño">
                 <button type="button"
-                        className="inline-block hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-opacity-[2%] hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 hover:bg-white"
-                        data-te-ripple-init>Diseño</button>
+                        className="inline-block font-kanit hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-opacity-[2%] hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 hover:bg-white"
+                        data-te-ripple-init>{seccion?.texto1}</button>
                 </Link>
                 </li>
                 <li className="p-4">
                 <Link href={"#metodologia"}>
                 <button type="button"
-                        className="inline-block hover:scale-105 rounded-full border-2 hover:bg-white border-[#ED1FE8] hover:text-[#ED1FE8] lg:text-lg text-xs px-6 pb-[6px] pt-2 font-medium uppercase leading-normal text-primary transition duration-150 hover:bg-opacity-[2%] ease-in-out hover:border-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700"
+                        className="inline-block font-kanit hover:scale-105 rounded-full border-2 hover:bg-white border-[#ED1FE8] hover:text-[#ED1FE8] lg:text-lg text-xs px-6 pb-[6px] pt-2 font-medium uppercase leading-normal text-primary transition duration-150 hover:bg-opacity-[2%] ease-in-out hover:border-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700"
                         data-te-ripple-init>Metodología</button>
                 </Link>
                 </li>
                 <li className="p-4">
                 <Link href={"#membersias"}>
                 <button type="button"
-                        className="inline-block hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs hover:bg-white hover:bg-opacity-[2%] font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-600 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700"
+                        className="inline-block font-kanit hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs hover:bg-white hover:bg-opacity-[2%] font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-600 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700"
                         data-te-ripple-init>Membersías</button>
                 </Link>
                 </li>
                 <li className="p-4">
                 <Link href={"#contacto"}>
                 <button type="button"
-                        className="inline-block hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs hover:bg-white hover:bg-opacity-[2%] font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-600 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700"
+                        className="inline-block font-kanit hover:scale-105 rounded-full border-2 border-[#ED1FE8] hover:text-[#ED1FE8] px-6 pb-[6px] pt-2 lg:text-lg text-xs hover:bg-white hover:bg-opacity-[2%] font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-600 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700"
                         data-te-ripple-init>Contacto</button>
                 </Link>
                 </li>
@@ -95,16 +123,16 @@ useEffect(() => {
                 }
                  >
             <ul>
-                <li onClick={handleNav} className="p-4 text-4xl hover:text-[#ED1FE8] transition duration-150 ease-in-out hover:scale-125 font-mono">
+                <li onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#ED1FE8] transition duration-150 ease-in-out hover:scale-125">
                   <Link href={"/membersias"}>Diseño</Link>
                 </li>
-                <li onClick={handleNav} className="p-4 text-4xl hover:text-[#ED1FE8] transition duration-150 ease-in-out hover:scale-125 font-mono">
+                <li onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#ED1FE8] transition duration-150 ease-in-out hover:scale-125">
                 <Link href={"#metodología"}>Metodología</Link>
                 </li>
-                <li onClick={handleNav} className="p-4 text-4xl hover:text-[#ED1FE8] transition duration-150 ease-in-out hover:scale-125 font-mono">
+                <li onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#ED1FE8] transition duration-150 ease-in-out hover:scale-125">
                 <Link href={"#Membersias"}>Membersías</Link>
                 </li>
-                <li onClick={handleNav} className="p-4 text-4xl hover:text-[#ED1FE8] transition duration-150 ease-in-out hover:scale-125 font-mono">
+                <li onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#ED1FE8] transition duration-150 ease-in-out hover:scale-125">
                 <Link href={"#contacto"}>Contacto</Link>
                 </li>
             </ul>

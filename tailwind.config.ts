@@ -1,7 +1,4 @@
-import type { Config } from 'tailwindcss'
-const withMT = require("@material-tailwind/html/utils/withMT");
-
-const config: Config = {
+module.exports= {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -10,7 +7,13 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        "principal": ['Be Vietnam Pro', 'sans-serif']
+        kanit: ['Kanit', 'sans-serif'],
+        alumni: ['Alumni Sans Collegiate One','sans-serif'],
+        roboto: ['Roboto Slab','serif'],
+        rubik: ['Rubik','sans-serif'],
+        garamond: ['EB Garamond','serif'],
+        saira: ['Saira Condensed','sans'],
+        wizard: ['Cardo','serif']
       }
     },
   },
@@ -19,4 +22,3 @@ const config: Config = {
     require('tailwind-scrollbar-hide')
   ],
 }
-export default config

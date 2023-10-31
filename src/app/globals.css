@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto+Slab:wght@300&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto+Slab:wght@300&family=Rubik:wght@500&family=Saira+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=EB+Garamond&family=Roboto+Slab:wght@300&family=Rubik:wght@500&family=Saira+Condensed:wght@300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 .fondo-img{
   background-image: url('https://i.postimg.cc/Z5MTqc52/christopher-gower-m-HRf-Lhg-ABo-unsplash.jpg');
@@ -52,6 +61,9 @@
   background-image: url('https://i.postimg.cc/KjWkVC0G/fondo-11.jpg');
 }
 
+.fondo-img13{
+  background-image: url('https://i.postimg.cc/x1KtG5ts/sitewizard-bg-logo.png');
+}
 
 
 .gif-1 {
@@ -71,28 +83,11 @@
   }
 }
 
-/* Diseño de Container Principales de Diseño.tsx*/
-.diseñoContainer{
-  @apply  w-[800px] h-[850px] bg-blue-500/80 rounded-lg shadow-lg border-2 shadow-blue-400/40
-}
-.diseñoContainer2{
-  @apply  w-[450px] h-[850px] bg-[#F3F3F3] rounded-lg shadow-lg border-2 shadow-[#ED1FE8]/40
-}
-
-
-
 /* Diseño de Boton para Inicio.tsx y Presentacion.tsx*/
 
 .miBoton{
   @apply hover:scale-110 hover:animate-pulse rounded-full hover:text-[#ED1FE8] border-4 border-white hover:border-[#ED1FE8] uppercase leading-normal transition duration-150 ease-in-out
 }
-
-/* Diseño para personalización de Sombras en Textos de Títulos de Letra Negra y Fondo Blanco*/
-
-.textShadow{
-  @apply drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.1)]
-}
-
 /*Lograr que no se vea el resaltado que se produce cuando un usuario selecciona texto en una página web */
 .no-select {
   user-select: none;
@@ -110,7 +105,7 @@
   
 }
 
-/* Nuevo CSS Grid Layouts */
+      /* Nuevo CSS Grid Layouts */
 
 .row::after{
   content: "";
@@ -118,7 +113,9 @@
   display: table;
 }
 
-/* Contenedor Presentscion */
+      /* PRESENTACION CSS GRID DESIGN*/
+
+/* Contenedor Presentacion */
 .grid-container6{
   display: grid;
   grid-gap: 2rem;
@@ -127,29 +124,43 @@
   "pr1" auto
   "pr2" auto
   "pr3" auto
-
 }
-
-
-/* Presentacion Responsive screen*/
-@media screen and (min-width:1024px) {
+/* Diseño para móviles (320px a 425px) */
+@media screen and (min-width: 0px) and (max-width: 425px) {
   .grid-container6 {
-      grid-gap: 1rem;
-      grid-template:
-      "pr1 pr1 pr4 pr4" auto
-      "pr2 pr3 pr4 pr4" auto;
-      grid-template-columns: 3fr 1.5fr 1.5fr 0.5fr;
+    /* Estilos específicos para móviles */
+    display: grid;
+    grid-gap: 2rem;
+    grid-template:
+    "pr4" auto
+    "pr1" auto
+    "pr2" auto
+    "pr3" auto
   }
 }
 
-@media screen and (max-width:768px) {
+/* Diseño para tabletas (426px a 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
   .grid-container6 {
-      grid-gap: 1rem;
-      grid-template:
-      "pr4 pr4 pr4 pr4" auto
-      "pr1 pr1 pr1 pr1" auto
-      "pr2 pr2 pr3 pr3" auto;
-      grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+    /* Estilos específicos para tabletas */
+    grid-gap: 1rem;
+    grid-template:
+    "pr4 pr4 pr4 pr4" auto
+    "pr1 pr1 pr1 pr1" auto
+    "pr2 pr2 pr3 pr3" auto;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  }
+}
+
+/* Diseño para escritorio (769px en adelante) */
+@media screen and (min-width: 769px) {
+  .grid-container6 {
+    /* Estilos específicos para escritorio */
+    grid-gap: 1rem;
+    grid-template:
+    "pr1 pr1 pr4 pr4" auto
+    "pr2 pr3 pr4 pr4" auto;
+    grid-template-columns: 3fr 1.5fr 1.5fr 0.5fr;
   }
 }
 
@@ -170,6 +181,10 @@
   grid-area: pr4;
 }
 
+
+
+      /* DISEÑO CSS GRID DESIGN*/
+
 /* Contenedor Diseño */
 .grid-container3{
   display: grid;
@@ -178,15 +193,38 @@
   "d1" auto
   "d2" auto
   "d3" auto;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
 }
-
-/* Diseño Responsive screen*/
-@media screen and (min-width:1024px) {
-  
+/* Diseño para móviles (320px a 425px) */
+@media screen and (min-width: 0px) and (max-width: 425px) {
   .grid-container3 {
+    /* Estilos específicos para móviles */
+    display: grid;
+    grid-gap: 1rem;
     grid-template:
-    "d1 d2 d3" auto;
-    grid-template-columns: 1.5fr 1fr 1fr;
+    "d1" auto
+    "d2" auto
+    "d3" auto;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+  }
+}
+/* Diseño para tabletas (426px a 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .grid-container3 {
+    /* Estilos específicos para tabletas */
+      grid-template:
+      "d1 d1 d2" auto
+      "d3 d3 d3" auto;
+      grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+/* Diseño para escritorio (769px en adelante) */
+@media screen and (min-width: 769px) {
+  .grid-container3 {
+    /* Estilos específicos para escritorio */
+      grid-template:
+      "d1 d2 d3" auto;
+      grid-template-columns: 1.5fr 1fr 1fr;
   }
 }
 /* Diseño Div 1*/
@@ -203,35 +241,76 @@
   grid-area: d3;
 }
 
-/* Contenedor de Footer*/
-.grid-container {
+      /* METODOLOGÍA CSS GRID DESIGN */
+
+/* Contenedor Metodologia */
+.grid-container5{
   display: grid;
+  grid-gap: 1rem;
   grid-template:
-  "f1" auto
-  "f2" auto
-  "f4" auto
+  "me1" auto
+  "me2" auto
+  "me3" auto
+  "me4" auto
+  "me5" auto;
 }
-/* Footer Responsive screen*/
-@media screen and (min-width:1000px) {
-  .grid-container {
+/* Diseño para móviles (320px a 425px) */
+@media screen and (min-width: 0) and (max-width: 425px) {
+  .grid-container5 {
+    /* Estilos específicos para móviles */
+    display: grid;
+    grid-gap: 1rem;
     grid-template:
-    "f1 f2" auto
-    "f4 f4" auto
+    "me1" auto
+    "me2" auto
+    "me3" auto
+    "me4" auto
+    "me5" auto;
   }
 }
+/* Diseño para tabletas (426px a 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .grid-container5 {
+    /* Estilos específicos para tabletas */
+    grid-gap: 1rem;
+    grid-template:
+    "me1 me1" auto
+    "me2 me3" auto
+    "me4 me5" auto;
+  }
+}
+/* Diseño para escritorio (769px en adelante) */
+@media screen and (min-width: 769px) {
+  .grid-container5 {
+    /* Estilos específicos para escritorio */
+    grid-gap: 1rem;
+    grid-template:
+    "me1 me1 me1 me1" auto
+    "me2 me3 me4 me5" auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/* Metodologia Div 1*/
+.met-1{
+  grid-area: me1;
+}
+/* MetodologiaDiv 2*/
+.met-2{
+  grid-area: me2;
+}
+/* Metodologia Div 3*/
+.met-3{
+  grid-area: me3;
+}
+/* Metodologia Div 4*/
+.met-4{
+  grid-area: me4;
+}
+/* Metodologia Div 5*/
+.met-5{
+  grid-area: me5;
+}
 
-/* Footer div 1 */
-.footer-1{
-  grid-area: f1;
-}
-/* Footer div 1 */
-.footer-2{
-  grid-area: f2;
-}
-/* Footer div 1 */
-.footer-4{
-  grid-area: f4;
-}
 
 /* Contenedor Membersias */
 .grid-container2{
@@ -316,77 +395,281 @@
 }
 
 
-/* Contenedor Metodologia */
-.grid-container5{
+      /* FOOTER CSS GRID DESIGN */
+
+/* Contenedor de Footer*/
+.grid-container {
   display: grid;
-  grid-gap: 1rem;
   grid-template:
-  "me1" auto
-  "me2" auto
-  "me3" auto
-  "me4" auto
-  "me5" auto;
+  "f1" auto
+  "f2" auto
+  "f4" auto
 }
-
-
-/* Metodologia Responsive screen*/
-@media screen and (min-width:1024px) {
-  .grid-container5 {
-      grid-gap: 1rem;
-      grid-template:
-      "me1 me1 me1 me1" auto
-      "me2 me3 me4 me5" auto;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-
+/* Footer Responsive screen*/
+@media screen and (min-width:1000px) {
+  .grid-container {
+    grid-template:
+    "f1 f2" auto
+    "f4 f4" auto
   }
-
 }
 
-/* Metodologia Div 1*/
-.met-1{
-  grid-area: me1;
+/* Footer div 1 */
+.footer-1{
+  grid-area: f1;
 }
-/* MetodologiaDiv 2*/
-.met-2{
-  grid-area: me2;
+/* Footer div 1 */
+.footer-2{
+  grid-area: f2;
 }
-/* Metodologia Div 3*/
-.met-3{
-  grid-area: me3;
-}
-/* Metodologia Div 4*/
-.met-4{
-  grid-area: me4;
-}
-/* Metodologia Div 5*/
-.met-5{
-  grid-area: me5;
+/* Footer div 1 */
+.footer-4{
+  grid-area: f4;
 }
 
 /* Responsives Screen */
 
-/* Screen Móviles */
-@media screen and (max-width: 600px) {
-
-}
-
-/* Screen Tablet */
-@media screen and (min-width: 600px) {
+/* Diseño para móviles (320px a 425px) */
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  
+    /* Estilos específicos para móviles */
   
 }
 
-/* Screen Escritorio */
-@media screen and (min-width: 768px) {
+/* Diseño para tabletas (426px a 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  
+    /* Estilos específicos para tabletas */
   
 }
 
-@media screen and (min-width: 992px) {
+/* Diseño para escritorio (769px en adelante) */
+@media screen and (min-width: 769px) {
+  
+    /* Estilos específicos para escritorio */
   
 }
 
-@media screen and (min-width: 1200px) {
-  
+     /* PAGINAS EXTERNAS */
+
+     /* ADMINISTRACION HOME */
+     /* Contenedor AdministracionHome */
+.grid-containerAdmin1{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:
+  "ah1" auto
+  "ah2" auto
 }
+/* AdministracionHome para móviles (320px a 425px) */
+@media screen and (min-width: 0) and (max-width: 425px) {
+  .grid-containerAdmin1 {
+    /* Estilos específicos para móviles */
+    grid-template:
+    "ah2" auto
+    "ah1" auto;
+  }
+}
+/* AdministracionHome para tabletas (426px a 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .grid-containerAdmin1 {
+    /* Estilos específicos para tabletas */
+    grid-gap: 2rem;
+    grid-template:
+    "ah2" auto
+    "ah1" auto;
+  }
+}
+/* AdministracionHome para escritorio (769px en adelante) */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .grid-containerAdmin1 {
+    /* Estilos específicos para escritorio */
+    grid-template:
+    "fant1 ah1 ah2 fant";
+    grid-template-columns: 0.1rem 3fr 3fr 0.1rem;
+  }
+}
+
+/* AdministracionHome para escritorio (769px en adelante) */
+@media screen and (min-width: 1441px) {
+  .grid-containerAdmin1 {
+    /* Estilos específicos para escritorio */
+    grid-template:
+    "fant1 ah1 ah2 fant";
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  }
+}
+/* AdministracionHome Div 1*/
+.ah-1{
+  grid-area: ah1;
+}
+/* AdministracionHome Div 2*/
+.ah-2{
+  grid-area: ah2;
+}
+.fant-1{
+  grid-area: fant1;
+}
+
+
+     /* ADMINISTRACION HOME */
+     /* Contenedor AdministracionPresentacion */
+     .grid-containerAdmin2{
+      display: grid;
+      grid-gap: 1rem;
+      grid-template:
+      "ap1" auto
+      "ap2" auto
+      "ap3" auto
+      "ap4" auto
+      "ap5" auto
+      "ap6" auto
+    }
+    /* AdministracionPresentacionpara móviles (320px a 425px) */
+    @media screen and (min-width: 0) and (max-width: 425px) {
+      .grid-containerAdmin2 {
+        /* AdministracionPresentacion para móviles */
+        grid-gap: 1rem;
+        grid-template:
+        "ap1" auto
+        "ap2" auto
+        "ap3" auto
+        "ap4" auto
+        "ap5" auto
+        "ap6" auto
+      }
+    }
+    /* AdministracionPresentacione para tabletas (426px a 768px) */
+    @media screen and (min-width: 426px) and (max-width: 768px) {
+      .grid-containerAdmin2 {
+        /* AdministracionPresentacion para tabletas */
+        grid-gap: 1rem;
+        grid-template:
+        "ap1 ap1" auto
+        "ap2 ap4" auto
+        "ap3 ap3" auto
+        "ap5 ap6" auto;
+        grid-template-columns: 1fr 1.5fr;
+      }
+    }
+    
+    /* AdministracionHome para escritorio (769px en adelante) */
+    @media screen and (min-width: 769px) {
+      .grid-containerAdmin2 {
+        /* AdministracionPresentacion para escritorio */
+        grid-gap: 1rem;
+        grid-template:
+        "ap1 ap1 ap1 ap1 ap1"
+        "ap2 ap3 ap3 ap4 ap4"
+        "ap5 ap3 ap3 ap6 ap6";
+        grid-template-columns: 1fr 0.6fr 0.6fr 0.7fr 0.7fr;
+      }
+    }
+    /* AdministracionPresentacion Div 1*/
+    .ap-1{
+      grid-area: ap1;
+    }
+    /* AdministracionPresentacion Div 2*/
+    .ap-2{
+      grid-area: ap2;
+    }
+    .ap-3{
+      grid-area: ap3;
+    }
+    .ap-4{
+      grid-area: ap4;
+    }
+    .ap-5{
+      grid-area: ap5;
+    }
+    .ap-6{
+      grid-area: ap6;
+    }
+
+         /* ADMINISTRACION DESCRIPCION */
+     /* Contenedor AdministracionDescripcion */
+     .grid-containerAdmin3{
+      display: grid;
+      grid-gap: 1rem;
+      grid-template:
+      "ad1" auto
+      "ad2" auto
+      "ad3" auto
+      "ad4" auto
+      "ad7" auto
+      "ad5" auto
+      "ad6" auto
+    }
+    /* AdministracionDescripcion móviles (320px a 425px) */
+    @media screen and (min-width: 0) and (max-width: 425px) {
+      .grid-containerAdmin3 {
+        display: grid;
+        /* AdministracionDescripcion para móviles */
+        grid-gap: 1rem;
+        grid-template:
+        "ad1" auto
+        "ad2" auto
+        "ad3" auto
+        "ad4" auto
+        "ad7" auto
+        "ad5" auto
+        "ad6" auto
+      }
+    }
+    /* AdministracionDescripcion para tabletas (426px a 768px) */
+    @media screen and (min-width: 426px) and (max-width: 768px) {
+      .grid-containerAdmin3 {
+        display: grid;
+        /* AdministracionPresentacion para tabletas */
+        grid-gap: 2rem;
+        grid-template:
+        "ad1 ad1" auto
+        "ad2 ad3" auto
+        "ad2 ad4" auto
+        "ad7 ad7" auto
+        "ad5 ad6" auto;
+        grid-template-columns: 2.4fr 2fr;
+      }
+    }
+    
+    /* AdministracionDescripcion para escritorio (769px en adelante) */
+    @media screen and (min-width: 769px) {
+      .grid-containerAdmin3 {
+        grid-gap: 1.2rem;
+        /* AdministracionPresentacion para escritorio */
+        grid-template:
+        "ad1 ad1" auto
+        "ad2 ad3" auto
+        "ad2 ad4" auto
+        "ad7 ad7" auto
+        "ad5 ad6" auto;
+        grid-template-columns: 2.4fr 2fr;
+      }
+    }
+    /* AdministracionDescripcion Div 1*/
+    .ad-1{
+      grid-area: ad1;
+    }
+    /* AdministracionDescripcion Div 2*/
+    .ad-2{
+      grid-area: ad2;
+    }
+    .ad-3{
+      grid-area: ad3;
+    }
+    .ad-4{
+      grid-area: ad4;
+    }
+    .ad-5{
+      grid-area: ad5;
+    }
+    .ad-6{
+      grid-area: ad6;
+    }
+    .ad-7{
+      grid-area: ad7;
+      
+    }
 
 
 

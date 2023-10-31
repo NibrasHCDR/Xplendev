@@ -19,13 +19,14 @@ function Presentacion({}: Props) {
           <div className="pre-1 h-auto w-full">
            
           <div className="m-2 w-auto h-auto">
-              <h1 className="pt-5 xl:text-5xl lg:text-5xl text-2xl cursor-default">UNA NUEVA IMAGEN PARA TU</h1>
-              <h1 className="pt-2 xl:text-5xl lg:text-5xl text-2xl cursor-default">NEGOCIO</h1>
-              <h2 className="xl:text-xl xl:mt-10 mt-2">Utilizamos tecnologías de vanguardia dentro de la Programación Web. Analizamos la mejor solucion adaptándonos a tu plan de negocio</h2>
-              <h2 className="xl:text-xl xl:mt-1">Conoce nuestras tecnologías de trabajo y más!</h2>
-              <div className="flex justify-center">
-                <Link href={'/Membersias'}>
-              <button id="myButton"className="xl:text-lg xl:mt-16 mt-2 no-select bg-white text-blue-500 hover:scale-110 hover:animate-pulse rounded-full hover:text-blue-500 border-4 border-blue-500/50 hover:border-text-blue-500 font-medium uppercase leading-normal transition duration-150 ease-in-out hover:border-primary-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 shadow-md shadow-blue-500 px-6 pb-[6px] pt-2">Conocer más</button>
+              <h1 className="pt-5 xl:text-5xl lg:text-5xl text-2xl cursor-default font-kanit">UNA NUEVA IMAGEN PARA TU NEGOCIO</h1>
+              <h2 className="lg:text-2xl lg:mt-10 mt-2 font-roboto">Utilizamos tecnologías de vanguardia dentro de la Programación Web. Integrando sistemas personalizados para lograr una experiencia de personalización única y explusiva</h2>
+              <h2 className="lg:text-2xl lg:mt-1 font-roboto">Conoce nuestro sistema único Sitewizard CMS...</h2>
+              <div className="flex mb-4">
+                <Link href={'/Administracion'}>
+                <button type="button"
+                        className="xl:mt-12 xl:text-2xl p-4 font-kanit border-2 grid mx-auto border-[#5694E0] hover:scale-105 transition duration-250 ease-in-out"
+                        data-te-ripple-init>SiteWizard CMS</button>
                </Link>
           </div>
            </div>
@@ -36,10 +37,10 @@ function Presentacion({}: Props) {
 
           <div className="xl:w-[400px] w-auto h-auto mx-2">
              <Image className="w-32 h-32" src={myImage2} alt={''}></Image>
-              <h1 className="xl:mt-10 xl:text-4xl mt-2 textShadow">Administración</h1>
-              <h2 className="xl:mt-4 xl:text-lg xl:mb-10 mt-2">Si tu negocio lo requiere, creamos un pánel de administración completamente personalizado y adaptado al diseño de tu página web</h2>
-              <Link className="" href={''}>
-              <h1 className="xl:mt-10 xl:text-md mt-4 underline text-blue-500">
+              <h1 className="lg:mt-10 lg:text-4xl mt-2 textShadow font-kanit">Administración</h1>
+              <h2 className="lg:mt-4 lg:text-xl xl:mb-10 mt-2 font-roboto">Si tu negocio lo requiere, creamos un pánel de administración completamente personalizado y adaptado al diseño de tu página web</h2>
+              <Link className="" href={'Sitewizard'}>
+              <h1 className="lg:mt-10 lg:text-lg mt-4 underline text-blue-500 font-roboto">
               Quiero saber como funciona →
               </h1>
               </Link>
@@ -51,10 +52,10 @@ function Presentacion({}: Props) {
             
           <div className="xl:w-[400px] w-auto h-auto xl:mb-32 mx-2">
               <Image className="w-32 h-32" src={myImage3} alt={''}></Image>
-              <h1 className="xl:mt-10 xl:text-4xl mt-2 textShadow">Mensajería</h1>
-              <h2 className="xl:mt-4 xl:text-lg xl:mb-10 mt-2">El contacto por mensaje directo es importante, contamos con diversos diseños para mensajéria de correos y redes sociales</h2>
+              <h1 className="lg:mt-10 lg:text-4xl mt-2 textShadow font-kanit">Mensajería</h1>
+              <h2 className="lg:mt-4 lg:text-xl xl:mb-10 mt-2 font-roboto">El contacto por mensaje directo es importante, contamos con diversos diseños para mensajéria de correos y redes sociales</h2>
               <Link className="" href={''}>
-              <h1 className="xl:mt-10 xl:text-md mt-4 underline text-blue-500">
+              <h1 className="lg:mt-10 lg:text-lg mt-4 underline text-blue-500 font-roboto">
               Quiero saber como funciona →
               </h1>
               </Link>

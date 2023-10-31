@@ -24,13 +24,13 @@ function Metodologia({}: Props) {
 
       <div className="h-auto w-full bg-white/70 pb-24">
 
-      <div className="grid-container5 text-start text-black pt-32 lg:mx-32 mx-3 justify-center">
+      <div className="grid-container5 text-start pt-32 lg:mx-32 mx-3 justify-center">
 
         <div className="met-1 w-full space-y-2">
-        <h1 className="pt-5 xl:text-5xl lg:text-5xl text-2xl cursor-default">DESCRUBRIENDO LA METODOLOGÍA USADA POR</h1>
-        <h1 className="xl:text-5xl lg:text-5xl text-2xl cursor-default">XPLENDEVELOPERS</h1>
-        <h2 className="pt-10 xl:text-2xl text-lg text-blue-950">El diseño de tu página web es lo más importante, por esto, contamos con un enfoque centrado en el crecimiento de tu negocio</h2>
-        <h2 className="pb-5 pt-5 xl:text-2xl text-lg text-blue-950">Conoce Nuestra <span className="xl:text-3xl text-xl text-blue-400">MET</span><span className="xl:text-3xl text-xl text-[#ED1FE8]">ODO</span><span className="xl:text-3xl text-xl text-yellow-400">LOG</span><span className="xl:text-3xl text-xl text-blue-400">ÍA</span></h2>
+        <h1 className="pt-5 xl:text-5xl lg:text-5xl text-2xl cursor-default font-kanit">DESCRUBRIENDO LA METODOLOGÍA USADA POR</h1>
+        <h1 className="xl:text-5xl lg:text-5xl text-2xl cursor-default font-kanit">XPLENDEVELOPERS</h1>
+        <h2 className="pt-10 xl:text-3xl text-lg text-blue-950 font-roboto">El diseño de tu página web es lo más importante, por esto, contamos con un enfoque centrado en el crecimiento de tu negocio</h2>
+        <h2 className="pb-5 pt-5 xl:text-3xl text-lg text-blue-950 font-roboto">Conoce Nuestra <span className="xl:text-3xl text-xl text-blue-400">MET</span><span className="xl:text-3xl text-xl text-[#ED1FE8]">ODO</span><span className="xl:text-3xl text-xl text-yellow-400">LOG</span><span className="xl:text-3xl text-xl text-blue-400">ÍA</span></h2>
         </div>
 
         <div className="met-2 lg:mt-[30px] shadow-lg rounded-lg shadow-blue-400/40 bg-gradient-to-r from-blue-400 to-blue-400/60">
@@ -40,8 +40,8 @@ function Metodologia({}: Props) {
              </Image>
           </motion.div>
           <div className="h-auto w-auto pb-1">
-          <h1 className="lg:text-4xl text-2xl text-start ml-4 mt-8 textShadw text-black">Análisis</h1>
-          <h1 className="lg:text-lg text-md text-start pb-[5px] ml-4 mt-6 textShadow text-white">Análisis detallado de tus <br></br> necesidades y objetivos</h1>
+          <h1 className="lg:text-4xl text-2xl text-start ml-4 mt-8 text-white font-kanit">Análisis</h1>
+          <h1 className="lg:text-lg text-md text-start pb-[5px] ml-4 mt-6 text-white font-roboto">Análisis detallado de tus <br></br> necesidades y objetivos</h1>
           </div>
           
         </div>
@@ -53,8 +53,8 @@ function Metodologia({}: Props) {
              </Image>
           </motion.div>
           <div className="h-auto w-auto pb-1">
-          <h1 className="lg:text-4xl text-2xl text-start ml-4 mt-8 textShadow text-white">Diseño</h1>
-          <h1 className="lg:text-lg text-md text-start pb-[5px] ml-4 mt-6 textShadow text-black">Diseñamos una página web<br></br>atractiva y funcional</h1>
+          <h1 className="lg:text-4xl text-2xl text-start ml-4 mt-8 text-black font-kanit">Diseño</h1>
+          <h1 className="lg:text-lg text-md text-start pb-[5px] ml-4 mt-6 text-black font-roboto">Diseñamos una página web<br></br>atractiva y funcional</h1>
           </div>
 
         </div>
@@ -66,8 +66,8 @@ function Metodologia({}: Props) {
              </Image>
           </motion.div>
           <div className="h-auto w-auto pb-1">
-          <h1 className="lg:text-4xl text-2xl text-start ml-4 mt-8 textShadow text-black">Entrega</h1>
-          <h1 className="lg:text-lg text-md text-start pb-[5px] ml-4 mt-6 textShadow text-white">Análisis detallado de tus <br></br> necesidades y objetivos</h1>
+          <h1 className="lg:text-4xl text-2xl text-start ml-4 mt-8 text-white font-kanit">Entrega</h1>
+          <h1 className="lg:text-lg text-md text-start pb-[5px] ml-4 mt-6 text-white font-roboto">¡Listo para comenzar a aprovechar <br></br> tu página web!</h1>
           </div>
 
         </div>
@@ -80,8 +80,8 @@ function Metodologia({}: Props) {
              </Image>
           </motion.div>
           <div className="h-auto w-auto pb-1">
-          <h1 className="lg:text-4xl text-2xl text-start ml-4 mt-8 textShadow text-white">Seguimiento</h1>
-          <h1 className="lg:text-lg text-md text-start pb-[5px] ml-4 mt-6 textShadow text-black">Análisis detallado de tus <br></br> necesidades y objetivos</h1>
+          <h1 className="lg:text-4xl text-2xl text-start ml-4 mt-8 text-black font-kanit">Seguimiento</h1>
+          <h1 className="lg:text-lg text-md text-start pb-[5px] ml-4 mt-6 text-black font-roboto">Preparados para optimizar <br></br> tu página web al máximo</h1>
           </div>
 
 
